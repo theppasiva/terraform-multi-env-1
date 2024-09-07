@@ -8,10 +8,10 @@ terraform {
 
 
 backend "s3" {
-    # bucket = "shivaram-practice-terraform"
-    # key    = "multienv"
-    # region = "us-east-1"
-    # dynamodb_table = "shivaram-practice-terraform-locking"
+    bucket = "shivaram-practice-terraform"
+    key    = "workspace"
+    region = "us-east-1"
+    dynamodb_table = "shivaram-practice-terraform-locking"
   }
 
 }
